@@ -267,7 +267,7 @@ footer .links li a {
 
 
 /* =============== Media Queary for Big device =============== */
-@media only screen and (min-width: 993px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
     .header-section .header-left {
         padding-bottom: 50px;
@@ -293,7 +293,7 @@ footer .links li a {
 
 
 /* =============== Media Queary for Medium device =============== */
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
     .header-section {
         padding: 50px 80px 0 50px;
         align-items: flex-end;
@@ -413,6 +413,15 @@ footer .links li a {
         transform: translateX(-50%);
     }
 
+    .header-button:hover{
+        transform: translate(-100px, -10px);
+        gap: 20px;
+    }
+
+    .header-button:hover i{
+        margin-left: 0px;
+    }
+
     .main-section {
         flex-direction: column;
     }
@@ -462,5 +471,12 @@ footer .links li a {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+}
+
+/* =============== Media Queary for Smaller Mobile device =============== */
+@media only screen and (max-width: 350px) {
+    .main-section .cards .match .flags {
+        flex-direction: column;
     }
 }
